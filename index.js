@@ -54,7 +54,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
-    title = `# ${answers.title} [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT))`
+    title = `# ${answers.title} [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
   };
 
   return `${title}
@@ -63,6 +63,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ${answers.description}
 
 ## Table of Contents
+[Installation](https://github.com/${answers.username}/${answers.repo}#installation)
+[Usage](https://github.com/${answers.username}/${answers.repo}#usage)
+[Contributing](https://github.com/${answers.username}/${answers.repo}#contributing)
+[License](https://github.com/${answers.username}/${answers.repo}#license)
+[Tests](https://github.com/${answers.username}/${answers.repo}#tests)
+[Questions](https://github.com/${answers.username}/${answers.repo}#questions)
 
 ## Installation
 ${answers.installation}
@@ -70,6 +76,7 @@ ${answers.installation}
 ## Usage
 ${answers.usage}
 
+## Contributing
 ${answers.credit}
 
 ${license}
@@ -78,19 +85,24 @@ ${license}
 ${answers.tests}
 
 ## Questions
-Reach out to me at ${answers.email}
-Explore more of my projects at https://github.com/${answers.username}
+Reach out to me at ${answers.email} if you have questions about this project. 
+You can explore more of my projects at https://github.com/${answers.username}.
 `;
 
 }
 
-// prompts for each section of the readme 
+// prompts for necessary info to create the content of the readme file
 inquirer
   .prompt([
     {
         type: 'input',
         name: 'title',
         message: 'What is the title of your project?',
+    },
+    {
+        type: 'input',
+        name: 'repo',
+        message: 'What is the name of the GitHub repository for this project?',
     },
     {
         type: 'input',
@@ -110,7 +122,7 @@ inquirer
     {
         type: 'input',
         name: 'credit',
-        message: 'List any collaborators on this project',
+        message: 'List any collaborators on this project, including their GitHub usernames',
     },
     {
         type: 'list',
@@ -126,7 +138,7 @@ inquirer
     {
         type: 'input',
         name: 'email',
-        message: 'Provide your email',
+        message: 'Provide your email so others can contact you for questions',
     },
     {
         type: 'input',

@@ -1,43 +1,39 @@
-# sjdhfkjh [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# README Generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-ksjdhkf
+This project was created to facilitate the creation of README.md files using Node.js
 
 ## Table of Contents
-[Installation](https://github.com/sdkjfhjk\/READMEGenerator#installation)
-[Usage](https://github.com/sdkjfhjk\/READMEGenerator#usage)
-[Contributing](https://github.com/sdkjfhjk\/READMEGenerator#contributing)
-[License](https://github.com/sdkjfhjk\/READMEGenerator#license)
-[Tests](https://github.com/sdkjfhjk\/READMEGenerator#tests)
-[Questions](https://github.com/sdkjfhjk\/READMEGenerator#questions)
+1. [Installation](#Installation)
+2. [Usage](#Usage)
+3. [Contributing](#Contributing)
+4. [License](#License)
+5. [Tests](#Tests)
+6. [Questions](#Questions)
 
 ## Installation
-skjdhf
+The user must have node installed, then they can run the index.js file in terminal.
 
 ## Usage
-ewhrkjwe
+The user can run the index.js file from terminal, answer the prompts, and then a README.md file is created
 
 ## Contributing
-xjcvhkjsdf
+
 
 ## License
-Copyright 2021 sdkjfhjk\
+The MIT License (MIT)
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Copyright (c) 2021 emrendle
 
-    http://www.apache.org/licenses/LICENSE-2.0
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Tests
-sjdhk
+This project is not currently designed to include tests. The user would need to build tests themselves
 
 ## Questions
-Reach out to me at sjdfhkjsef if you have questions about this project. 
-You can explore more of my projects at https://github.com/sdkjfhjk\.
+Reach out to me at emilyrendleman@gmail.com if you have questions about this project. 
+You can explore more of my projects at https://github.com/emrendle.

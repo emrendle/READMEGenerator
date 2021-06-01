@@ -63,12 +63,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ${answers.description}
 
 ## Table of Contents
-[Installation](https://github.com/${answers.username}/${answers.repo}#installation)
-[Usage](https://github.com/${answers.username}/${answers.repo}#usage)
-[Contributing](https://github.com/${answers.username}/${answers.repo}#contributing)
-[License](https://github.com/${answers.username}/${answers.repo}#license)
-[Tests](https://github.com/${answers.username}/${answers.repo}#tests)
-[Questions](https://github.com/${answers.username}/${answers.repo}#questions)
+1. [Installation](#Installation)
+2. [Usage](#Usage)
+3. [Contributing](#Contributing)
+4. [License](#License)
+5. [Tests](#Tests)
+6. [Questions](#Questions)
 
 ## Installation
 ${answers.installation}

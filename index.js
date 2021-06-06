@@ -1,7 +1,8 @@
-// packages needed for this application - file structure and inquirer
+// dependencies
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+// takes user input and generates the content of the readme file
 const generateReadMe = (answers) => {
   // handling the licensing - adds a badge for the license next to the title and the appropriate license text to the license section
   if (answers.license === "No License") {
@@ -47,7 +48,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.`
     license = `## License
 The MIT License (MIT)
 
-Copyright (c) 2021 ${answers.username}
+Copyright (c) 2021 ${answers.name}
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -91,18 +92,13 @@ You can explore more of my projects at https://github.com/${answers.username}.
 
 }
 
-// prompts for necessary info to create the content of the readme file
+// prompts user for readme content
 inquirer
   .prompt([
     {
         type: 'input',
         name: 'title',
         message: 'What is the title of your project?',
-    },
-    {
-        type: 'input',
-        name: 'repo',
-        message: 'What is the name of the GitHub repository for this project?',
     },
     {
         type: 'input',
@@ -132,13 +128,18 @@ inquirer
     },
     {
         type: 'input',
+        name: 'name',
+        message: 'Provide your full name for licensing purposes',
+    },
+    {
+        type: 'input',
         name: 'tests',
         message: 'Describe how the user can execute tests on this project',
     },
     {
         type: 'input',
         name: 'email',
-        message: 'Provide your email so others can contact you for questions',
+        message: 'Provide your email so others can contact you about this project',
     },
     {
         type: 'input',
@@ -146,16 +147,10 @@ inquirer
         message: 'Provide your GitHub username',
     },
   ])
+    // generates readme document with the inquirer answers
   .then((answers) => {
     const readMeContent = generateReadMe(answers);
     fs.writeFile('README.md', readMeContent, (err) => err ? console.log(err) : console.log('README complete.'));
   });
-  // .catch((error) => {
-  //   if (error.isTtyError) {
-  //     // Prompt couldn't be rendered in the current environment
-  //   } else {
-  //     // Something else went wrong
-  //   }
-  // });
 
 
